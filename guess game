@@ -1,0 +1,21 @@
+import random
+
+number = random.randint(1, 9)
+guess = ''
+count = int()
+while True:
+    guess = int(input('guess a number: '))
+    count += 1
+    if guess == number:
+        print("you guessed it right")
+        print(count)
+    elif guess < number:
+        print("too low")
+    elif guess > number:
+        print("too high")
+    elif guess == 'quit':
+        print("have a good day")
+        break
+    else:
+        print("i don't understand that")
+        continue
